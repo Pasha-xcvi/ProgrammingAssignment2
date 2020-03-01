@@ -1,3 +1,4 @@
+#function to create the matrix
 makeCacheMatrix <- function(t = matrix()) {
     p <- NULL
   inputy <- function(h) {
@@ -13,6 +14,7 @@ makeCacheMatrix <- function(t = matrix()) {
        callinv= callinv)
 }
 
+#function to calculate the inverse of the matrix
 cacheSolve <- function(u, ...) {
   n <- u$callinv()
   if (!is.null(n)) {
